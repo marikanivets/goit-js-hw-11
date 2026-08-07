@@ -14,7 +14,7 @@ export function getImagesByQuery(query) {
     },
   };
 
-  return axios.get(BASE_URL, searchParams)
+  return axios.get(`${BASE_URL}/api/`, searchParams)
     .then(response => {
       return response.data;
     });
